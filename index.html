@@ -8,13 +8,7 @@
   <body>
     <header><h1>The Landing Page</h1>
     
-      <nav class="flex">
-        <ul class="flex">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-    </nav>
+      
     
     </header>
 
@@ -64,6 +58,58 @@
         </p>
         <a href="http://classics.mit.edu/">Find out More</a>
       </section>
+
+      
+
+      <form class="flex flex--col">
+        <h2>Contact Us</h2>
+        
+          <label for="name" class="sr-only">Name</label>
+          <input type="text" id="name" name="name" />
+      
+        
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+        
+          <label for="phone">phone</label>
+          <input type="phone" id="phone" name="phone" />
+        
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Enter your message"></textarea>
+          
+
+        
+
+        
+        
+
+        
+          
+          <label for="hear-select">How did you hear about us?</label>
+
+          <select name="heard" id="hear-select">
+            <option value="">--PLease choose an option--</option>
+
+            <option value="friends">Friends</option>
+            <option value="search">Search Engine</option>
+            <option value="ad">Advertisement</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="interest">What's your level of interest in buying stuff</label>
+          <input type="range" id="interest" name="interest" min="0" max="10" />
+       
+
+        <button type="submit">Send</button>
+      </form>
     </main>
+
+    <footer>
+
+      <p>&copy; 2022 - Landing</p>
+
+      
+  </footer>
+
   </body>
 </html>
