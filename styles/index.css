@@ -38,6 +38,10 @@ header {
 .flex {
     display: flex;
 }
+.flex--col {
+    flex-direction: column;
+}
+
 .items-center{
     align-items: center;
 }
@@ -89,7 +93,8 @@ header {
   .w-max-content{
     width: max-content;
   }
-  
+
+
 
   #hero {
     background-image: url('./images/landing.jpg');
@@ -108,5 +113,16 @@ header {
 
   .p-1 {
     1rem;
+  }
+
+  /*MEDIA QUERIES with brakpoints */
+  @media screen and (min-width: 768px) {
+    /*background changes when min width met*/
+    .bg-primary{
+        background-color: red;
+    }
+    #hero section:first-of-type{
+        width: 50%;
+    }
   }
 
