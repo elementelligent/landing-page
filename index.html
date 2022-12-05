@@ -1,128 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/index.css" />
 
-  <link rel="stylesheet" href="./styles/index.css" />
+    <title>The Landing Page</title>
+  </head>
 
+  <body>
+    <header>
+      <h1 class="text-center">The Landing Page</h1>
+    </header>
 
-  <title>The Landing Page</title>
-</head>
+    <main>
+      <!-- TODO: Use this 'div' for background image. -->
+      <div id="hero" class="flex flex-column items-center justify-center">
+        <section class="bg-translucent-dark rounded">
+          <h2 class="text-center">Call to Action</h2>
+          <p class="text-center">Sign up for our newsletter!</p>
+          <form class="flex flex-column gap items-center">
+            <label for="email" class="sr-only">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              class="text-center"
+            />
+            <button type="submit" class="button button-submit">Sign Up</button>
+          </form>
+        </section>
+      </div>
 
-<body>
-  <header>
-    <h1 class="text-center">The Landing Page</h1>
+      <div class="flex-lg flex-row">
+        <section class="bg-secondary flex items-center flex-column">
+          <h2>Our Mission</h2>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptates, quod, quia, voluptate quae voluptatem quidem voluptas
+            doloremque quos quibusdam nesciunt. Quisquam, quae. Quisquam, quae.
+            Quisquam, quae. Quisquam, quae.
+          </p>
+          <a
+            href="http://classics.mit.edu/"
+            class="button bg-tertiary inline-block text-dark text-no-underline"
+            >Find out More</a
+          >
+        </section>
 
-  </header>
+        <section class="bg-primary flex items-center flex-column">
+          <h2>Our Team</h2>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptates, quod, quia, voluptate quae voluptatem quidem voluptas
+            doloremque quos quibusdam nesciunt. Quisquam, quae. Quisquam, quae.
+            Quisquam, quae. Quisquam, quae.
+          </p>
+          <a
+            href="http://classics.mit.edu/"
+            class="button bg-tertiary inline-block text-dark text-no-underline"
+            >Find out More</a
+          >
+        </section>
 
-  <main>
-    <!-- TODO: Use this 'div' for background image. -->
-    <div id="hero" class="flex flex-column items-center justify-center">
-      <section class="bg-translucent-dark rounded">
-        <h2 class="text-center">Call to Action</h2>
-        <p class="text-center">Sign up for our newsletter!</p>
-        <form class="flex flex-column gap items-center">
+        <section class="bg-secondary flex items-center flex-column">
+          <h2>Our Services</h2>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptates, quod, quia, voluptate quae voluptatem quidem voluptas
+            doloremque quos quibusdam nesciunt. Quisquam, quae. Quisquam, quae.
+            Quisquam, quae. Quisquam, quae.
+          </p>
+          <a
+            href="http://classics.mit.edu/"
+            class="button bg-tertiary inline-block text-dark text-no-underline"
+            >Find out More</a
+          >
+        </section>
+      </div>
+
+      <form class="bg-dark flex flex-column gap items-center" id="contact">
+        <h2>Contact Us</h2>
+
+        <!--div will flex on large screen-->
+        <div class="flex flex-column flex-row gap">
+          <label for="name" class="sr-only">Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter name"
+            class="text-center rounded w-max-content"
+          />
+
           <label for="email" class="sr-only">Email</label>
-          <input type="email" id="email" placeholder="Enter your email" class="text-center" />
-          <button type="submit" class="button button-submit">Sign Up</button>
-        </form>
-      </section>
-    </div>
+          <input
+            type="email"
+            id="contact-email"
+            placeholder="Enter email"
+            class="text-center rounded w-max-content"
+          />
 
-    <div class="flex-lg flex-row">
-      <section class="bg-secondary flex items-center flex-column">
-        <h2>Our Mission</h2>
-        <p class="text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          voluptates, quod, quia, voluptate quae voluptatem quidem voluptas
-          doloremque quos quibusdam nesciunt. Quisquam, quae. Quisquam, quae.
-          Quisquam, quae. Quisquam, quae.
-        </p>
-        <a href="http://classics.mit.edu/" class="button bg-tertiary inline-block text-dark text-no-underline">Find out
-          More</a>
-      </section>
+          <label for="phone" class="sr-only">phone</label>
+          <input
+            type="phone"
+            id="phone"
+            placeholder="Enter phone number"
+            class="text-center rounded w-max-content"
+          />
+        </div>
+        <label for="message" class="sr-only">Message</label>
+        <textarea
+          id="message"
+          placeholder="Enter message"
+          class="text-center rounded w-max-content"
+        ></textarea>
 
-      <section class="bg-primary flex items-center flex-column">
-        <h2>Our Team</h2>
-        <p class="text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          voluptates, quod, quia, voluptate quae voluptatem quidem voluptas
-          doloremque quos quibusdam nesciunt. Quisquam, quae. Quisquam, quae.
-          Quisquam, quae. Quisquam, quae.
-        </p>
-        <a href="http://classics.mit.edu/" class="button bg-tertiary inline-block text-dark text-no-underline">Find out
-          More</a>
-      </section>
+        <label for="hear-select">How did you hear about us?</label>
 
-      <section class="bg-secondary flex items-center flex-column">
-        <h2>Our Services</h2>
-        <p class="text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          voluptates, quod, quia, voluptate quae voluptatem quidem voluptas
-          doloremque quos quibusdam nesciunt. Quisquam, quae. Quisquam, quae.
-          Quisquam, quae. Quisquam, quae.
-        </p>
-        <a href="http://classics.mit.edu/" class="button bg-tertiary inline-block text-dark text-no-underline">Find out
-          More</a>
-      </section>
-    </div>
+        <select name="heard" id="hear-select">
+          <option value="">--Please choose an option--</option>
 
+          <option value="friends">Friends</option>
+          <option value="search">Search Engine</option>
+          <option value="ad">Advertisement</option>
+          <option value="other">Other</option>
+        </select>
 
+        <button type="submit" class="button button-submit">Send</button>
+      </form>
+    </main>
 
-    <form class="bg-dark flex flex-column gap items-center" id="contact">
-      <h2>Contact Us</h2>
-
-      <!--div will flex on large screen-->
-      <div class="flex flex-column flex-row gap">
-      <label for="name" class="sr-only">Name</label>
-      <input type="text" id="name" placeholder="Enter name" class="text-center rounded w-max-content" />
-
-
-      <label for="email"class="sr-only">Email</label>
-      <input type="email" id="contact-email" placeholder="Enter email" class="text-center rounded w-max-content" />
-
-      <label for="phone" class="sr-only">phone</label>
-      <input type="phone" id="phone" placeholder="Enter phone number" class="text-center rounded w-max-content" />
-    </div>
-      <label for="message" class="sr-only">Message</label>
-      <textarea id="message" placeholder="Enter message" class="text-center rounded w-max-content"></textarea>
-    
-
-      <label for="hear-select">How did you hear about us?</label>
-
-      <select name="heard" id="hear-select">
-        <option value="">--Please choose an option--</option>
-
-        <option value="friends">Friends</option>
-        <option value="search">Search Engine</option>
-        <option value="ad">Advertisement</option>
-        <option value="other">Other</option>
-      </select>
-
-
-
-
-      <button type="submit" class="button button-submit">Send</button>
-    </form>
-  </main>
-
-  <footer class="bg-secondary">
-
-    <p>&copy; 2022 - Landing</p>
-
-
-  </footer>
-
-</body>
-
+    <footer class="bg-secondary">
+      <p>&copy; 2022 - Landing</p>
+    </footer>
+  </body>
 </html>
