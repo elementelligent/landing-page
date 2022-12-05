@@ -164,6 +164,9 @@ header {
     }
   }
 
+  .flex-row--md{
+    flex-direction: row;
+  }
   @media (width >= 1024px) {
     .flex-lg {
     display: flex;
@@ -174,3 +177,4 @@ header {
   }
 
 }
+
