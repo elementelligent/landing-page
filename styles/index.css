@@ -1,4 +1,4 @@
-/* review root(?) for color */
+/* review root(?) for color. GLobally accessible to any/all elements on the page*/
 :root {
     --primary-color: #845ec2;
     --secondary-color: #4e8397;
@@ -40,10 +40,10 @@ header {
     background-color: var(--primary-color);
 }
 .bg-secondary {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 .bg-tertiary {
-    background-color: var(--primary-color);
+    background-color: var(--tertiary-color);
 }
 .bg-translucent-dark{
     background-color: rgba(0, 0, 0, 0.5);
