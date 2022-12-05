@@ -61,6 +61,7 @@ header {
   .button-submit{
     background-color: var(--accent-color);
   }
+/* a parent flexbox ONLY CONTROLS DIRECT CHILDREN */
 
 .flex {
     display: flex;
@@ -85,9 +86,6 @@ header {
 .inline-block{
     display: inline-block;
   }
-
-
-
 
 .m-0 {
     margin: 0;
@@ -134,7 +132,7 @@ header {
   }
 
 
- 
+ /* Take up as much space as you need to fit this content*/
   .w-max-content{
     width: max-content;
   }
@@ -145,12 +143,12 @@ header {
   }
 
   #contact {
-    background-image: url('./images/contact.jpg');
+    background-image: url('../images/contact.jpg');
    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5); 
   }
 
   #hero {
-    background-image: url('./images/landing.jpg');
+    background-image: url('../images/landing.jpg');
     height: 50vh; 
   }
 
