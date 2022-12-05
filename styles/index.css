@@ -156,14 +156,15 @@ header {
 
 
   /*MEDIA QUERIES with brakpoints */
-  @media screen and (min-width: 768px) {
+
+  @media (width >= 768px) {
     /*background changes when min width met*/
     #hero section:first-of-type{
         width: 50%;
     }
   }
 
-  @media screen and (min-width: 1024px) {
+  @media (width >= 1024px) {
     .flex-lg {
     display: flex;
   }
